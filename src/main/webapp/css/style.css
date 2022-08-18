@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+*{
+	margin:0;
+	padding:0;
+}
+body{								
+	font-family: "Maven Pro", "Noto Sans KR", Sans-serif;
+	font-size: 14px;
+	font-weight:400;
+	color:#666;						
+}
+ul{
+	list-style: none;
+}
+.d-none{
+	display: none;
+}
+
+.header-wrap{
+	position: absolute;
+	max-width: 1000px;
+}
+.logo .menu-btn{
+	display: flex;
+}
+.logo{
+	top:3rem;
+}
+
+
