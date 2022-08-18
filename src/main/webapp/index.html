@@ -1,88 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
 <meta charset="UTF-8">
 <link rel="shortcut icon" href="images/favicon.ico" />
-<link rel="stylesheet" href="css/style.css" />
 <title>(주)이미그룹</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&family=Noto+Sans+KR:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
 
 </head>
 <body>
 	<header>
-		<div class="header-wrap">
-			<div class="logo">
-				<img src="images/logo.png" alt="로고" />
-			</div>
-			<div class="menu-btn">
-				<img src="images/btn_menu.png" alt="메뉴버튼" />
-			</div>
-			<div class="slogan">	
-				<img src="images/slogan.png" alt="하늘에서바다까지!" />
-			</div>
+		<div class="header">
+			<figure>
+				<img src="images/logo.png" class="logo" alt="logo" />
+				<img src="images/btn_menu.png" class="btn-menu" alt="btn_menu" />
+				<img src="images/slogan.png" class="slogan" alt="slogan" />
+			</figure>
 		</div>
-			<div class="visual">	
-				<img src="images/visual_bg.jpg" alt="메인 이미지" />
-			</div>
 	</header>
-	<div class='management'>
-		<div>
+	<div class="system-wrap">
+		<article class="system">
 			<h1>물관리 시스템</h1>
-			<h2>Water Management System</h2>
-		</div>
-		<div class="system-imgs">
-			<div>
-				<img src="images/system_img1.jpg" alt="재해관리 이미지" />
+			<h2>Water Management Systems</h2>
+			<div class="water">
+				<div class="systemover1">
+					<div class="overlay">
+						<a href="#">
+							<img src="images/system_over1.png" alt="system-over1" />
+						</a>
+					</div>
+					<img src="images/system_img1.jpg" alt="system-img1" />
+				</div>
+				<div class="systemover2">
+					<div class="overlay">
+						<a href="#">
+						<img src="images/system_over2.png" alt="system-over2" />
+						</a>
+					</div>
+					<img src="images/system_img2.jpg" alt="system-img2" />
+				</div>			
+				<div class="systemover3">
+					<div class="overlay">
+						<a href="#">
+						<img src="images/system_over3.png" alt="system-over3" />
+						</a>
+					</div>
+					<img src="images/system_img3.jpg" alt="system-img3" />
+				</div>
 			</div>
-			<div>
-				<img src="images/system_img2.jpg" alt="댐 이미지" />
-			</div>
-			<div>
-				<img src="images/system_img3.jpg" alt="마을 이미지" />
-			</div>
-		</div>
+		</article>
 	</div>
-	<div class="product">
-		<div>
+	<div class="product-wrap">
+		<article class="product">
 			<h1>생산제품</h1>
-			<h2>2015년 신제품 지능형 텔레모스시스템!</h2>
-		</div>
-		<div class="product-img">
-			<img src="images/product.png" alt="텔레모스시스템 이미지" />
-		</div>
-		<div class="more">
-			<p>자세히보기</p>
-		</div>
-		<div class="company">
-			<div>
-				<h1>(주) 이미그룹</h1>
-				<h2><span>사람과 자연 모두가 행복한 세상,</span><br>이미가 만들어 가고자 하는 미래입니다.</h2>
+			<h2>2015년 신제품 지능형 <span>텔리모스 시스템!</span></h2>
+			<div class="product-img">
+				<img src="images/product.png" alt="product" />
 			</div>
-			<div class="company-bg">
-				<img src="images/company_bg.jpg" alt="company_bg img" />
-			</div>
+			<p class="more">
+				<a href="#">자세히보기</a>
+			</p>
+		</article>
+	</div>
+	<div class="company-wrap">
+		<article>
 			<div class="company">
-				<img src="images/company.png" alt="company img" />
+				<h1>(주) 이미그룹</h1>
+				<h2>사람과 자연 모두가 행복한 세상,</h2>
+				<h3>이미가 만들어 가고자 하는 미래입니다.</h3>	
 			</div>
-			<div class="icon-call">
-				<img src="images/icon_call.png" alt="call icon" />
+		</article>
+	</div>
+	<div class="btns-wrap">
+		<div class="btns">
+			<div class="call">
+				<img src="images/icon_call.png" alt="icon-call" />
+				<a href="#">062) 670 - 0300</a>
 			</div>
-			<div class="btn-top">
-				<img src="images/btn_top.gif" alt="btn_top" />
+			<div class="top">
+				<a href="#"><img src="images/btn_top.gif" alt="btn-top" /></a>
 			</div>
 		</div>
 	</div>
 	<footer>
-		<div class="footer-logo">
-			<img src="images/footer_logo.png" alt="footer_logo" />
-		</div>
-		<div class="footer-info">
-			<p class="info">(주) 이미그룹    대표이사 : 이미    본사 : 광주광역시 서구 쌍촌동 한울직업전문학교 4층 403호    연구소 : 광주광역시 서구 쌍촌동 한울직업전문학교 4층 403호 왼쪽 3번째줄 창가 2번째 자리
-				<br>고객센터 : 062-1234-5678      팩스 : 062-1234-5679      이메일 : already@hanmail.net</p>
-			<p class="copyright">COPYRIGHT&copy;  2012 DAEYOUNG.CO.LTD ALL RIGHTS RESERVED.</p>
+		<div class="footer-wrap">
+			<div class="footer-logo">
+				<img src="images/footer_logo.png" alt="footer-logo" />
+			</div>
+			<div class="addr">
+				<p>(주)이미그룹   대표이사:이미   본사:광주광역시서구쌍촌동 한울직업전문학교4층403호   연구소:광주광역시서구쌍촌동한울직업전문학교4층403호왼쪽3번째줄창가2번째자리</p>
+			</div>
+			<div class="info">
+				<p>고객센터:062-1234-5678    팩스:062-1234-5679    이메일:already@hanmail.net</p>
+			</div>
+			<div class="copyright">
+				<p>COPYRIGHT&copy;  2012 DAEYOUNG.CO.LTD ALL RIGHTS RESERVED.</p>
+			</div>
 		</div>
 	</footer>
 </body>
