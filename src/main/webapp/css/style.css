@@ -125,7 +125,8 @@ ul{
 }
 .more:hover{
 	color:white;
-	background: #666;
+	background: #999;
+	border-color:#999;
 	text-decoration:none;			/* 배경은효과 적용되고 글자색은 안됨 */
 }
 .company{
@@ -194,13 +195,59 @@ ul{
 	padding:1rem;
 }
 
+/* pop menu */
+.pop-wrap{
+	background: #000;
+	opacity: 80%;
+}
+.pop{
+	max-width:1000px;
+	margin:0 auto;
+}
 
 
-
-
-
-
-
+.btn-close{
+	display: flex;
+	justify-content: flex-end;
+	padding:2rem 0;
+}
+.gnb-logo{
+	text-align: center;
+}
+.login{
+	display: flex;
+	justify-content: center;
+	margin:2rem 0 0;
+	font-size:13px;
+	color:#ccc;
+}
+.login p{
+	border:1px solid #999;
+	padding:.5rem 2rem;
+}
+.login p:hover{
+	color:#fff;
+}
+.popnav-wrap{
+	max-width:1000px;
+	magin:0 auto;
+}
+#pop-nav{
+	display: flex;
+	font-size:20px;
+	color:#fff;
+	justify-content: space-around;
+	padding:4rem 0 5rem;
+}
+#pop-nav li:hover{
+	background-color: #0a6dca;
+}
+#pop-nav li{
+	border:1px solid #ccc;
+	width:62.5rem;
+	text-align: center;
+	padding:.5rem;
+}
 
 
 
