@@ -37,8 +37,8 @@ ul{
 }
 .slogan{
 	position: absolute;
-	top:18rem;
-	left:17rem;
+	top:23rem;
+	left:15rem;
 }
 .water{
 	display: flex;
@@ -198,14 +198,17 @@ ul{
 /* pop menu */
 .pop-wrap{
 	background: #000;
+	position:fixed;
 	opacity: 80%;
+	z-index: 100;
+	width:100%;
+	height:100%;
 }
 .pop{
 	max-width:1000px;
 	margin:0 auto;
+	z-index: 10;
 }
-
-
 .btn-close{
 	display: flex;
 	justify-content: flex-end;
@@ -228,9 +231,10 @@ ul{
 .login p:hover{
 	color:#fff;
 }
+
 .popnav-wrap{
 	max-width:1000px;
-	magin:0 auto;
+	margin:0 auto;
 }
 #pop-nav{
 	display: flex;
@@ -248,7 +252,9 @@ ul{
 	text-align: center;
 	padding:.5rem;
 }
-
+.show{
+	display: block;
+}
 
 
 

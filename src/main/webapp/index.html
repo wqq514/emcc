@@ -10,29 +10,28 @@
 <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&family=Noto+Sans+KR:wght@400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css" />
 
+
 </head>
 <body>
-	<div id="layer-popup">
-		<div class="pop-wrap" id ="closer">
-			<div class="pop">
-				<div class="btn-close">
-					<img src="images/btn_close.png" alt="btn_close" />
-				</div>
-				<div class="gnb-logo">
-					<img src="images/gnb_logo.png" alt="gnb-logo" />
-				</div>
-				<div class="login">
-					<p>로그인</p>
-					<p>회원가입</p>
-				</div>
-				<div class="popnav-wrap">
-					<ul id="pop-nav">
-						<li>물관리 자동화 시스템</li>
-						<li>생산제품</li>
-						<li>고객센터</li>
-						<li>이미그룹소개</li>
-					</ul>
-				</div>
+	<div id="layer-popup" class="pop-wrap d-none">
+		<div class="pop">
+			<div id="closer" class="btn-close" >
+				<img src="images/btn_close.png" alt="btn_close" />
+			</div>
+			<div class="gnb-logo">
+				<img src="images/gnb_logo.png" alt="gnb-logo" />
+			</div>
+			<div class="login">
+				<p>로그인</p>
+				<p>회원가입</p>
+			</div>
+			<div class="popnav-wrap">
+				<ul id="pop-nav">
+					<li>물관리 자동화 시스템</li>
+					<li>생산제품</li>
+					<li>고객센터</li>
+					<li>이미그룹소개</li>
+				</ul>
 			</div>
 		</div>
 	</div>
@@ -40,7 +39,7 @@
 		<div class="header">
 			<figure>
 				<img src="images/logo.png" class="logo" alt="logo" />
-				<img src="images/btn_menu.png" class="btn-menu" id="opener" alt="btn_menu" />
+				<img src="images/btn_menu.png" id="opener" class="btn-menu"  alt="btn_menu" />
 				<img src="images/slogan.png" class="slogan" alt="slogan" />
 			</figure>
 		</div>
@@ -125,6 +124,23 @@
 			</div>
 		</div>
 	</footer>
+	<script>
+	const openBtn = document.querySelector("#opener");
+	const sidePane = document.querySelector("#layer-popup");
+	
+	
+	openBtn.addEventListener("click", function(){
+		sidePane.classList.add("show");
+	});
+	
+	const closeBtn = document.querySelector("#closer");
+	
+	closeBtn.addEventListener("click", function(){
+		sidePane.classList.remove("show");			
+	});
+	
+
+	</script>
 </body>
 </html>
 
